@@ -89,6 +89,7 @@ body{
 
 @media (max-width: 600px) {
     .whether-card {
+        height: 100vh;
         padding: 20px;
         margin: 50px auto; /* Reduce margin for smaller screens */
     }
