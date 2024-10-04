@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppings', sans-serif;
+}
+body{
+    background-color: #222;
+}
+.whether-card{
+    width: 90%;
+    max-width: 470px;
+    /* height: 600px; */
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-box{
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    /* flex: 1; */
+    margin-right: 18px;
+    font-size: 18px;
+}
+.search-btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    padding: 0.1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-btn img{
+    width: 16px;
+    height: 16px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.whether h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.whether h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.detals{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 3rem;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+
+
+@media (max-width: 600px) {
+    .whether-card {
+        padding: 20px;
+        margin: 50px auto; /* Reduce margin for smaller screens */
+    }
+
+    .search-input{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .input-box { 
+        height: 50px; 
+        font-size: 16px;
+    }
+    .search-btn {
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+    }
+    .search-btn img{
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        padding: 8px;
+        border-radius: 50%;
+    }
+
+    .weather-icon {
+        width: 130px; /* Smaller weather icon */
+        margin-top: 20px; /* Adjust top margin */
+    }
+
+    .whether h1 {
+        font-size: 20px; /* Smaller heading */
+    }
+
+    .whether h2 {
+        font-size: 20px; /* Smaller subheading */
+    }
+
+    .detals {
+        flex-direction: row; /* Stack details vertically */
+        padding: 5px; /* Remove padding */
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    .col {
+        justify-content: center; /* Center-align columns */
+        margin-bottom: 10px; /* Space between rows */
+    }
+
+    .humidity, .wind {
+        font-size: 20px; /* Smaller text for details */
+    }
+}
